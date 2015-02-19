@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pinboard Sync",
+  "description": "Sync your Pinboard contacts with Chrome",
+  "version": "1.0",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "background": {
+    "scripts": ["js/jquery-2.1.3.min.js", "js/bookmark.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "https://api.pinboard.in/v1/*"
+  ]
+}
